@@ -68,7 +68,7 @@
                 </div>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                     <div class="card-body">
-                        Anim pariatur cliche reprehenderit,
+                        <a class="nav-link" href="../training/">Capacitación<span class="sr-only">(current)</span></a>
                     </div>
                 </div>
             </div>

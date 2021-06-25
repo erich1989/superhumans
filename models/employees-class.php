@@ -33,6 +33,14 @@ class Employee extends BaseModel
     public $pdf;
 
 
+    function selectNameEmployees() {
+        $query = "SELECT id, first_name, last_name FROM employee ORDER BY first_name";
+        $result = mysqli_query($this->connection, $query );
+        while ($row = mysqli_fetch_array($result)){
+            $this->json[] = $row;
+        }
+        return $this->json;
+    }
     function selectAllEmployees($state)
     {
         $result = mysqli_query($this->connection, "SELECT * FROM employee WHERE active = '$state' ORDER BY first_name");

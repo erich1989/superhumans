@@ -22,7 +22,7 @@ function selectAllEmployees() {
                             <td>${employee['start_of_date']}</td>
                             <td>
                                 <div>
-                                    <a href="../../src/job-certificate/certificate.php?id=${employee["id"]}" type="" class="btn btn-primary btn-sm" target="_blank"><i class="fas fa-file-alt"></i></a>
+                                    <a href="../../src/pdf-certificates/certificate.php?id=${employee["id"]}" type="" class="btn btn-primary btn-sm" target="_blank"><i class="fas fa-file-alt"></i></a>
                                     <a href="../employees/update-employee.php?id=${employee["id"]}" type="" class="btn btn-success btn-sm"><i class="fas fa-user-edit"></i></a>
                                     <a href="../employees/delete-employee.php?id=${employee["id"]}" type="" class="btn btn-danger btn-sm"><i class="fas fa-user-times"></i></a>
                                 </div>
@@ -68,7 +68,7 @@ function searchEmployees(valueInput) {
                             <td>${employee.startdate}</td>
                             <td>
                                 <div>
-                                    <a href="../../src/job-certificate/certificate.php?id=${employee.id}" type="" class="btn btn-primary btn-sm" target="_blank"><i class="fas fa-file-alt"></i></a>
+                                    <a href="../../src/pdf-certificates/certificate.php?id=${employee.id}" type="" class="btn btn-primary btn-sm" target="_blank"><i class="fas fa-file-alt"></i></a>
                                     <a href="../employees/update-employee.php?id=${employee.id}" type="" class="btn btn-success btn-sm"><i class="fas fa-user-edit"></i></a>
                                     <a href="../employees/delete-employee.php?id=${employee.id}" type="" class="btn btn-danger btn-sm"><i class="fas fa-user-times"></i></a>
                                 </div>

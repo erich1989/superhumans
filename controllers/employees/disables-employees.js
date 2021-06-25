@@ -20,7 +20,7 @@ function selectRetiredEmployees() {
                             <td>${employee['reason_dismissal']}</td>
                             <td>
                                 <div>
-                                    <a href="../../src/job-certificate/certificate-retired.php?id=${employee["id"]}" type="" class="btn btn-primary btn-sm" target="_blank"><i class="fas fa-file-alt"></i></a>
+                                    <a href="../../src/pdf-certificates/certificate-retired.php?id=${employee["id"]}" type="" class="btn btn-primary btn-sm" target="_blank"><i class="fas fa-file-alt"></i></a>
                                     <a href="update.php?id=${employee["id"]}" type="" class="btn btn-success btn-sm"><i class="fas fa-user-plus"></i></a>
                                 </div>
                             </td>
@@ -65,7 +65,7 @@ function searchRetiredEmployees(value) {
                             <td>${employee.reasondismissal}</td>
                             <td>
                                 <div>
-                                    <a href="../../src/job-certificate/certificate-retired.php?id=${employee.id}" type="" class="btn btn-primary btn-sm" target="_blank"><i class="fas fa-file-alt"></i></a>
+                                    <a href="../../src/pdf-certificates/certificate-retired.php?id=${employee.id}" type="" class="btn btn-primary btn-sm" target="_blank"><i class="fas fa-file-alt"></i></a>
                                     <a href="update.php?id=${employee["id"]}" type="" class="btn btn-success btn-sm"><i class="fas fa-user-plus"></i></a>
                                 </div>
                             </td>

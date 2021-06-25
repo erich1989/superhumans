@@ -10,7 +10,7 @@ date_default_timezone_set("America/Bogota");
 
 $month = date('F');
 
-$monthNames = ['January' => 'Enero', 'February' => 'Febrero', 'March' => 'Marzo'];
+$monthNames = ['January' => 'Enero', 'February' => 'Febrero', 'March' => 'Marzo', 'April' => 'Abril', 'May' => 'Mayo', 'June' => 'Junio', 'July' => 'Julio', 'August' => 'Agosto', 'September'=> 'Septiembre', 'October'=> 'Octubre', 'November' => 'Noviembre', 'December' => 'Diciembre'];
 
 $date = $monthNames[$month] . date(' d \d\e Y');
 
@@ -27,7 +27,6 @@ if (count($employees) > 0) {
         $lastName = $employee['last_name'];
         $cc = $employee['cc'];
         $StartDate = $employee['start_of_date'];
-        $endDate = $employee['end_date'];
         $position = $employee['position'];
         $contractType = $employee['contract_type'];
         $salary = $employee['salary'];
@@ -41,7 +40,6 @@ function newDate($oldDate)
 }
 
 $newDate = newDate($StartDate);
-$newEndDate = newDate($endDate);
 
 $pdf = new FPDF();
 $pdf->SetMargins(20, 35, 20, 18);
@@ -60,13 +58,9 @@ $pdf->Write(8, utf8_decode(' identificado(a) con cédula de ciudadanía número 
 $pdf->SetFont('Arial', 'B', 12);
 $pdf->Write(8, $cc);
 $pdf->SetFont('Arial', '', 12);
-$pdf->Write(8, utf8_decode(' laboró al servicio del (empresa xxxxxxx)  desde el '));
+$pdf->Write(8, ' labora al servicio del (empresa xxxxxxx)  desde el ');
 $pdf->SetFont('Arial', 'B', 12);
 $pdf->Write(8, $newDate);
-$pdf->SetFont('Arial', '', 12);
-$pdf->Write(8, ' hasta el ');
-$pdf->SetFont('Arial', 'B', 12);
-$pdf->Write(8, $newEndDate);
 $pdf->SetFont('Arial', '', 12);
 $pdf->Write(8, utf8_decode(' desempeñando el cargo de '));
 $pdf->SetFont('Arial', 'B', 12);

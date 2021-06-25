@@ -32,5 +32,5 @@ form.addEventListener('submit', function (e) {
     xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     xmlhttp.send(`id=${id}&firstname=${firstname}&lastname=${lastname}&cc=${cc}&birthday=${birthday}&position=${position}&area=${area}&contract=${contract}&phone=${phone}&address=${address}&email=${email}&salary=${salary}&arl=${arl}&ccf=${ccf}&eps=${eps}&startdate=${startDate}`);
 
-    e.preventDefault();
+    // e.preventDefault();
 })
